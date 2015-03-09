@@ -1,4 +1,4 @@
-function myFunction(){
+function myGreen(){
                 document.getElementById("square").style.backgroundColor = "green";
             }
 
