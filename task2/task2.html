@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>header!</title>
+
+    <link rel="stylesheet" type="text/css" href="task2.css">
+    <style type="text/css">
+            <!-- CSS goes here -->
+    </style>
+
+</head>
+<body>
+  	 <div id="green">Green</div>  <!-- HTML goes here -->
+            <button id="Make_Green" onclick="myFunction()"> Make Green</button>
+    
+    <div id="red">Red</div>  <!-- HTML goes here -->
+            <button id="red1" onclick="myRed ()"> Make Red</button>
+    
+    <script type="text/javascript">
+        //javascript code goes here at the bottom to ensure the DOM is loaded...>
+            function myFunction(){
+                document.getElementById("green").style.backgroundColor = "green";
+            }
+
+            function myRed(){
+                document.getElementById("red").style.backgroundColor = "red";
+            }
+
+    </script>
+</body>
+</html>
