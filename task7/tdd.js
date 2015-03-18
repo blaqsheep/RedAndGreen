@@ -2,6 +2,9 @@
 var passed = 0;
 var failed = 0;
 var total = 0;
+var text = 0;
+
+
 
 var assert = {
 	equals: function(expectedResults, returnResults){
@@ -33,3 +36,8 @@ var assert = {
  			functiontoreturn(assert)
  		}
  	};
+function odwa(){
+	text = passed + failed;
+	}
+odwa()
+document.write(text)
