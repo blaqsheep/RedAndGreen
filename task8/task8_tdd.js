@@ -16,14 +16,20 @@ var assert = {
 		if(expectedResults === returnResults){
 			passed++;
 			myDiv.makeGreen();
+			document.getElementById(newElement.id).innerHTML='Expecting "'+expectedResults+' Recieved "'+returnResults+'" Test passed!';
+			
 		}
 		else{
 			failed++;
 			myDiv.makeRed();
+			document.getElementById(newElement.id).innerHTML='Expecting "'+ returnResults+'"" Recieved " '+expectedResults+' ", thus test failed!';
 		}
 
 		total = passed + failed;
-		document.getElementById("progress").innerHTML='Passes: '+passed+' Failed: '+failed+' Total tests: '+total;
+
+		//document.getElementById(newElement.id).innerHTML= 'passed: '+passed;
+		document.getElementById("progress").innerHTML='Passed: '+passed+' Failed: '+failed+' Total tests: '+total;
+		//document.write(expectedResults)
 	}
 };
 
